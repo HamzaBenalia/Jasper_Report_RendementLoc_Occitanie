@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_25" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="701b3a8c-ef5b-497f-a59c-09f7315ae7b8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<subDataset name="Dataset1" uuid="d3f9461b-06cb-42a1-9690-6eea71d5f908">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+		<queryString language="csv">
+			<![CDATA[]]>
+		</queryString>
+		<field name="LIBGEO" class="java.lang.String"/>
+		<field name="DEP" class="java.lang.Integer"/>
+		<field name="Rendement_Annuel" class="java.math.BigDecimal"/>
+	</subDataset>
+	<queryString language="csv">
+		<![CDATA[]]>
+	</queryString>
+	<field name="LIBGEO" class="java.lang.String"/>
+	<field name="DEP" class="java.lang.Integer"/>
+	<field name="Rendement_Annuel" class="java.math.BigDecimal"/>
+	<sortField name="Rendement_Annuel" order="Descending"/>
+	<filterExpression><![CDATA[$F{DEP}.intValue() == 81]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="70" y="10" width="393" height="69" uuid="7882e6ed-dc62-4e87-9aa3-5844ea0f204c"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Le rendement locatif par villes dans le dép 81]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="10" width="200" height="30" uuid="8373dbd8-dadb-4b93-982b-d559eb68a8de"/>
+				<box topPadding="9" leftPadding="51" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Villes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="10" width="150" height="30" uuid="c9218ec9-9863-4985-9b01-788ee5bc12df"/>
+				<box topPadding="9" leftPadding="51" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rendement locatif 
+]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="0" width="200" height="30" uuid="fad1851f-248a-4f51-b57e-b498ef23d6b8"/>
+				<box topPadding="9" leftPadding="51" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{LIBGEO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="150" height="30" uuid="614de824-f12a-4d3a-8748-9e7b1d57cc42"/>
+				<box topPadding="9" leftPadding="51" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{Rendement_Annuel}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="321" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="211" splitType="Stretch"/>
+	</summary>
+</jasperReport>

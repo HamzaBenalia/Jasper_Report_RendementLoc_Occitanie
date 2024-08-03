@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1ee38da5-a643-40a3-8816-b692ed80fb5f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="csv">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id_mutation" class="java.lang.String"/>
+	<field name="date_mutation" class="java.sql.Date"/>
+	<field name="numero_disposition" class="java.lang.Integer"/>
+	<field name="nature_mutation" class="java.lang.String"/>
+	<field name="valeur_fonciere" class="java.lang.Integer"/>
+	<field name="adresse_numero" class="java.lang.Integer"/>
+	<field name="adresse_suffixe" class="java.lang.String"/>
+	<field name="adresse_nom_voie" class="java.lang.String"/>
+	<field name="adresse_code_voie" class="java.lang.String"/>
+	<field name="code_postal" class="java.lang.Integer"/>
+	<field name="code_commune" class="java.lang.Integer"/>
+	<field name="nom_commune" class="java.lang.String"/>
+	<field name="code_departement" class="java.lang.Integer"/>
+	<field name="ancien_code_commune" class="java.lang.String"/>
+	<field name="ancien_nom_commune" class="java.lang.String"/>
+	<field name="id_parcelle" class="java.lang.String"/>
+	<field name="ancien_id_parcelle" class="java.lang.String"/>
+	<field name="lot1_numero" class="java.lang.Integer"/>
+	<field name="lot1_surface_carrez" class="java.math.BigDecimal"/>
+	<field name="lot2_numero" class="java.lang.Integer"/>
+	<field name="lot2_surface_carrez" class="java.math.BigDecimal"/>
+	<field name="lot3_numero" class="java.lang.Integer"/>
+	<field name="lot3_surface_carrez" class="java.math.BigDecimal"/>
+	<field name="lot4_numero" class="java.lang.Integer"/>
+	<field name="lot4_surface_carrez" class="java.lang.String"/>
+	<field name="lot5_numero" class="java.lang.String"/>
+	<field name="lot5_surface_carrez" class="java.lang.String"/>
+	<field name="nombre_lots" class="java.lang.Integer"/>
+	<field name="code_type_local" class="java.lang.Integer"/>
+	<field name="type_local" class="java.lang.String"/>
+	<field name="surface_reelle_bati" class="java.lang.Integer"/>
+	<field name="nombre_pieces_principales" class="java.lang.Integer"/>
+	<field name="code_nature_culture" class="java.lang.String"/>
+	<field name="nature_culture" class="java.lang.String"/>
+	<field name="code_nature_culture_speciale" class="java.lang.String"/>
+	<field name="nature_culture_speciale" class="java.lang.String"/>
+	<field name="surface_terrain" class="java.lang.Integer"/>
+	<field name="longitude" class="java.math.BigDecimal"/>
+	<field name="latitude" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

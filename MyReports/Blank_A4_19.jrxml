@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_19" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f12bd5fa-8981-4f16-bd2e-3d182d0c4521">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="csv">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Column1" class="java.lang.Integer"/>
+	<field name="INSEE_COM" class="java.lang.Integer"/>
+	<field name="Annee" class="java.lang.Integer"/>
+	<field name="Nb_mutations" class="java.lang.Integer"/>
+	<field name="NbMaisons" class="java.lang.Integer"/>
+	<field name="NbApparts" class="java.lang.Integer"/>
+	<field name="propmaison" class="java.lang.Integer"/>
+	<field name="propappart" class="java.lang.Integer"/>
+	<field name="PrixMoyen" class="java.lang.Integer"/>
+	<field name="Prixm2Moyen" class="java.math.BigDecimal"/>
+	<field name="SurfaceMoy" class="java.math.BigDecimal"/>
+	<field name="pred-app-mef-dhup (2).DEP" class="java.lang.Integer"/>
+	<field name="pred-app-mef-dhup (2).REG" class="java.lang.Integer"/>
+	<field name="pred-app-mef-dhup (2).loypredm2" class="java.math.BigDecimal"/>
+	<group name="Column1">
+		<groupExpression><![CDATA[$F{Column1}]]></groupExpression>
+	</group>
+	<group name="INSEE_COM">
+		<groupExpression><![CDATA[$F{INSEE_COM}]]></groupExpression>
+	</group>
+	<group name="Annee">
+		<groupExpression><![CDATA[$F{Annee}]]></groupExpression>
+	</group>
+	<group name="Nb_mutations">
+		<groupExpression><![CDATA[$F{Nb_mutations}]]></groupExpression>
+	</group>
+	<group name="NbMaisons">
+		<groupExpression><![CDATA[$F{NbMaisons}]]></groupExpression>
+	</group>
+	<group name="NbApparts">
+		<groupExpression><![CDATA[$F{NbApparts}]]></groupExpression>
+	</group>
+	<group name="propmaison">
+		<groupExpression><![CDATA[$F{propmaison}]]></groupExpression>
+	</group>
+	<group name="propappart">
+		<groupExpression><![CDATA[$F{propappart}]]></groupExpression>
+	</group>
+	<group name="PrixMoyen">
+		<groupExpression><![CDATA[$F{PrixMoyen}]]></groupExpression>
+	</group>
+	<group name="Prixm2Moyen">
+		<groupExpression><![CDATA[$F{Prixm2Moyen}]]></groupExpression>
+	</group>
+	<group name="SurfaceMoy">
+		<groupExpression><![CDATA[$F{SurfaceMoy}]]></groupExpression>
+	</group>
+	<group name="pred-app-mef-dhup (2).DEP">
+		<groupExpression><![CDATA[$F{pred-app-mef-dhup (2).DEP}]]></groupExpression>
+	</group>
+	<group name="pred-app-mef-dhup (2).REG">
+		<groupExpression><![CDATA[$F{pred-app-mef-dhup (2).REG}]]></groupExpression>
+	</group>
+	<group name="pred-app-mef-dhup (2).loypredm2">
+		<groupExpression><![CDATA[$F{pred-app-mef-dhup (2).loypredm2}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

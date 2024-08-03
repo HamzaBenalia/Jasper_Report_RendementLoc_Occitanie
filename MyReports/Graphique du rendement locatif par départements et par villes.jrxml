@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_23" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27cc01d2-f072-4ce0-849f-2b04bd69e967">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<subDataset name="Dataset1" uuid="16629f2c-a8d0-4bd1-9fbc-9fa5f7c7171f">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+		<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="457"/>
+		<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="529"/>
+		<queryString language="csv">
+			<![CDATA[]]>
+		</queryString>
+		<field name="LIBGEO" class="java.lang.String"/>
+		<field name="DEP" class="java.lang.Integer"/>
+		<field name="Rendement_Annuel" class="java.math.BigDecimal"/>
+		<filterExpression><![CDATA[$F{DEP}.intValue() == 81]]></filterExpression>
+	</subDataset>
+	<queryString language="csv">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id_zone" class="java.lang.Integer"/>
+	<field name="INSEE_C" class="java.lang.Integer"/>
+	<field name="LIBGEO" class="java.lang.String"/>
+	<field name="EPCI" class="java.lang.Integer"/>
+	<field name="DEP" class="java.lang.Integer"/>
+	<field name="REG" class="java.lang.Integer"/>
+	<field name="loypredm2" class="java.math.BigDecimal"/>
+	<field name="lwr.IPm2" class="java.math.BigDecimal"/>
+	<field name="upr.IPm2" class="java.math.BigDecimal"/>
+	<field name="Annee" class="java.lang.Integer"/>
+	<field name="Nb_mutations" class="java.lang.Integer"/>
+	<field name="NbMaisons" class="java.math.BigDecimal"/>
+	<field name="NbApparts" class="java.math.BigDecimal"/>
+	<field name="PrixMoyen" class="java.math.BigDecimal"/>
+	<field name="Prixm2Moyen" class="java.math.BigDecimal"/>
+	<field name="SurfaceMoy" class="java.math.BigDecimal"/>
+	<field name="Loyer_Mensuel" class="java.math.BigDecimal"/>
+	<field name="Rendement_Annuel" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement x="70" y="20" width="370" height="39" uuid="cdb0e50a-efb6-42fd-89a4-fd9e1b9e946c"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Graphique rendement locatif par départements et par villes ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="215" splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="322" splitType="Stretch">
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="30" width="250" height="200" uuid="6c5a652b-ae41-41ef-8ce9-6aca85a816b9"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{DEP}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{Rendement_Annuel}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="300" y="30" width="230" height="200" uuid="1428e695-8d63-4e16-b581-e665d381a79b"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="Dataset1" uuid="df4318c4-3dde-4c44-a834-9a6645665d5e"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{LIBGEO}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{Rendement_Annuel}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</summary>
+</jasperReport>

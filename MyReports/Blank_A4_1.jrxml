@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="efbdda60-bf02-4513-9117-d69622e76750">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="csv">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id_zone" class="java.lang.Integer"/>
+	<field name="INSEE_C" class="java.lang.Integer"/>
+	<field name="LIBGEO" class="java.lang.String"/>
+	<field name="EPCI" class="java.lang.Integer"/>
+	<field name="DEP" class="java.lang.Integer"/>
+	<field name="REG" class="java.lang.Integer"/>
+	<field name="loypredm2" class="java.lang.Integer"/>
+	<field name="lwr.IPm2" class="java.lang.Long"/>
+	<field name="upr.IPm2" class="java.lang.Integer"/>
+	<field name="TYPPRED" class="java.lang.Long"/>
+	<field name="nbobs_com" class="java.lang.Integer"/>
+	<field name="nbobs_mail" class="java.lang.Long"/>
+	<field name="R2_adj" class="java.lang.String"/>
+	<field name="" class="java.lang.Integer"/>
+	<field name="COLUMN_14" class="java.lang.Integer"/>
+	<field name="COLUMN_15" class="java.lang.Integer"/>
+	<field name="COLUMN_16" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
